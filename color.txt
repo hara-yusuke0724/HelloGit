@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-red
-=======
 red
 blue
->>>>>>> testbranch
+green
