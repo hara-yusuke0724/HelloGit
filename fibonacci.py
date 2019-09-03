@@ -1,6 +1,11 @@
 def fib(n):
-                lst = [1, 1]
-                for i in range(1, n-1):
-                                lst = lst[1], sum(lst)
-                return sum(lst)
-print(fib(40))
+                if n > 1:
+                                n -= 1
+                                p = fib(n)
+                                n -= 1
+                                q = fib(n)
+                                m = p + q
+                                return m
+                else:
+                                return 1
+print(fib(4))
