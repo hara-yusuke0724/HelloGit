@@ -1,12 +1,16 @@
-import numpy as np
-def fib(n):
-    A = np.matrix([[0, 1],
-                   [1, 1]], dtype=np.int64)
-    R = np.matrix([[0],
-                   [1]], dtype=np.int64)
-    
-    R = A ** (n - 1) * R
-    
-    return R[1, 0]
-for i in range(1, 5):
-    print('{:,}'.format(fib(i)))
+def Fibonacci(n): 
+    if n<0: 
+        print("Incorrect input") 
+    # First Fibonacci number is 0 
+    elif n==1: 
+        return 0
+    # Second Fibonacci number is 1 
+    elif n==2: 
+        return 1
+    else: 
+        return Fibonacci(n-1)+Fibonacci(n-2) 
+  
+# Driver Program 
+  
+print(Fibonacci(9)) 
+  
