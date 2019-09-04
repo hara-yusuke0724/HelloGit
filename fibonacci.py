@@ -1,6 +1,8 @@
 def Fibonacci(n): 
     if n<0: 
         print("Incorrect input") 
+    elif n==0:
+        return 0
     # First Fibonacci number is 0 
     elif n==1: 
         return 0
@@ -12,5 +14,5 @@ def Fibonacci(n):
   
 # Driver Program 
   
-print(Fibonacci(9)) 
+# print(Fibonacci(9)) 
   
