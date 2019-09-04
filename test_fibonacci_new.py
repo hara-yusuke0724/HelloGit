@@ -1,8 +1,8 @@
 import unittest
 import fibonacci
 
-class Testfibobacci(unittest.TestCase):
-    def test_fibobacci_new(self):
+class Testfibonacci(unittest.TestCase):
+    def test_fibonacci_new(self):
         pairs = [
               [0, 0],
               [1, 0],
